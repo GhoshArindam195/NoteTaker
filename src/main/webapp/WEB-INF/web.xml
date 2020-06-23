@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>temp</display-name>
+  <servlet>
+  	<description>
+  	</description>
+  	<display-name>Add_noteServlet</display-name>
+  	<servlet-name>Add_noteServlet</servlet-name>
+  	<servlet-class>com.servlets.Add_noteServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<description>
+  	</description>
+  	<display-name>RemoveServlet</display-name>
+  	<servlet-name>RemoveServlet</servlet-name>
+  	<servlet-class>com.servlets.RemoveServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<description>
+  	</description>
+  	<display-name>Update_noteServlet</display-name>
+  	<servlet-name>Update_noteServlet</servlet-name>
+  	<servlet-class>com.servlets.Update_noteServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Add_noteServlet</servlet-name>
+  	<url-pattern>/Add_noteServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>RemoveServlet</servlet-name>
+  	<url-pattern>/RemoveServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Update_noteServlet</servlet-name>
+  	<url-pattern>/Update_noteServlet</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
